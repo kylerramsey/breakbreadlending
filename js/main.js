@@ -1,9 +1,4 @@
-/* Template Name: Bnker. - Banking and Loan HTML Templates
-   Author: Acavo
-   Version: 1.0.0
-   Created: May 2021
-   File Description: Main js file of the template
-*/
+
 (function ($) {
 	"use strict";
 
