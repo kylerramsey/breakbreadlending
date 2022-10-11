@@ -255,11 +255,8 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-phone">
                                     <input type="text" name="phone" id="phone" placeholder="Phone *" required="">
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group  contact-icon contacts-subject">
-                                    <input type="text" name="subject" id="subject" placeholder="Subject *" required="">
-                                </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-message">
-                                    <textarea name="message" id="message" placeholder="Message..."></textarea>
+                                    <textarea name="message" id="message" placeholder="How can we help? *"></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                     <button class="btn theme-btn-1" type="submit" name="submit-form">Submit</button>
@@ -297,7 +294,7 @@
                         <!-- col -->
                         <div class="col-lg-4">
                             <div class="button-shared text-end">
-                                <a href="contact.html" class="btn cta-btn">
+                                <a href="https://calendly.com/bblending" class="btn cta-btn">
                                     Request Call Back <span class="la la-caret-right"></span>
                                 </a>
                             </div>
@@ -446,14 +443,15 @@
     <script>
         function sendEmail () {
             Email.send({
-            SecureToken: "44388bbd-8a3b-4881-9df4-6be06c9a3526",
-            From: 'ryan@breakbreadlending.com',
-            To : 'ryan@breakbreadlending.com',
+            Host : "smtp.elasticemail.com",
+            Username : "breakbreadwebleads@gmail.com",
+            Password : "4C01622D11985894F62CEF4CB61AA1467B0A",
+            To: 'breakbreadwebleads@gmail.com',
+            From : "breakbreadwebleads@gmail.com",
             Subject : "New lead from website contact form",
             Body : "Name: " + document.getElementById("name").value
                 + '<br> Email: ' + document.getElementById("email").value
                 + '<br> Phone: ' + document.getElementById("phone").value
-                + '<br> Subject: ' + document.getElementById("subject").value
                 + '<br> Message: ' + document.getElementById("message").value
         }).then(
         message => alert("Message Sent Succesfully")

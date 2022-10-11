@@ -176,7 +176,7 @@
                 <!-- col -->
                 <div class="col-lg-8 col-md-12 mb-50">
                     <div class="section-title">
-                        <h2 class="title">Apply for a loan</h2>
+                        <h2 class="title">Apply now</h2>
                         <div class="title-bdr">
                             <div class="left-bdr"></div>
                             <div class="right-bdr"></div>
@@ -331,7 +331,7 @@
                         <!-- col -->
                         <div class="col-lg-4">
                             <div class="button-shared text-end">
-                                <a href="contact.html" class="btn cta-btn">
+                                <a href="https://calendly.com/bblending" class="btn cta-btn">
                                     Request Call Back <span class="la la-caret-right"></span>
                                 </a>
                             </div>
@@ -480,9 +480,11 @@
     <script>
         function sendLoanApp () {
             Email.send({
-            SecureToken: "44388bbd-8a3b-4881-9df4-6be06c9a3526",
-            From: 'ryan@breakbreadlending.com',
-            To : 'ryan@breakbreadlending.com',
+            Host : "smtp.elasticemail.com",
+            Username : "breakbreadwebleads@gmail.com",
+            Password : "4C01622D11985894F62CEF4CB61AA1467B0A",
+            To: 'breakbreadwebleads@gmail.com',
+            From : "breakbreadwebleads@gmail.com",
             Subject : "New loan application generated from website",
             Body : "Name: " + document.getElementById("name").value
                 + '<br> Email: ' + document.getElementById("email").value
