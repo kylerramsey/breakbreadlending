@@ -1,4 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--====== Design by codemediaweb.com =====-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Automatic Popup</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8fbaec;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+}
+h2{
+  margin-top: 10px;
+  font-size: 25px;
+}
+.popup button{
+    display: block;
+     position: absolute;
+  top: 0;
+  right: 0;
+    margin: 10px 10px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    font-size: 17px;
+    text-align: center;
+    background-color: red;
+		border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.icon1{
+  font-size: 60px;
+  background: red;
+  height: 120px;
+  width: 120px;
+  color: white;
+  border-radius: 50%;
+  line-height: 120px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="popup">
+
+
+       <div class="fab fa-youtube icon1"></div>
+       <button id="close">&times;</button>
+
+
+        <h2> <strong>!ERC FLASH PASS!</strong> </h2>
+        <p>Introducing the ERC Flash Pass, File and Advance your Employee Retention Credit all at the same time!
+    We now offer 3 different solutions for your ERC. 
+    Option 1, File your Employee Retention Credit with the IRS
+    Option 2, If you have already filed and you would like to advance your funds
+    Option 3, File and Advance your credits in as little as 2 weeks with our FLASH PASS
+    NO MORE WAITING 8-10 MONTHS FOR YOUR CHECKS FROM THE IRS</p>
+        <a href="https://hr2itnojuqu.typeform.com/to/rzR4pojF?typeform-source=www.google.com#affiliatename=RyanS">FILE NOW</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000000
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+</body>
+</html><!doctype html>
 <html lang="zxx">
 
 <head>
