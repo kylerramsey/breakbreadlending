@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
         function open(event){
             document.querySelector(".popup").style.display = "block";
         },
-        1000
+        1000000
     )
 });
 
